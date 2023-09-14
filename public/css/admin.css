@@ -6,5 +6,6 @@
 
 body {
     display: grid;
+    background-color: beige;
     grid-template-rows: auto auto 1fr auto;
 }
