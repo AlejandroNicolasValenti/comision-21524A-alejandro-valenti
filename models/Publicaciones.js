@@ -22,12 +22,14 @@ const Publicacion = sequelize.define('Publicacion', {
         type: DataTypes.DATE,
         allowNull: true,
         defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
-    }
-},{
+    },
+    autor: {
+        type: DataTypes.STRING(255),
+        allowNull: true,
+    },
+}, {
     timestamps: false,
     tableName: 'publicaciones'
 });
 
 module.exports = Publicacion;
-
-
